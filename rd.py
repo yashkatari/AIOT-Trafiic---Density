@@ -4,11 +4,11 @@ from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
 # Google Sheets setup
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+SCOPES =
 SERVICE_ACCOUNT_FILE = 'keys.json'
 creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build("sheets", "v4", credentials=creds)
-SAMPLE_SPREADSHEET_ID = "1e_ELNNI0Z6SpGmFiwYzdVRnHKrkH06pj0bkZR1cfooY"
+SAMPLE_SPREADSHEET_ID = 
 
 # Get next available row
 def get_next_available_row(sheet):
@@ -76,3 +76,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
