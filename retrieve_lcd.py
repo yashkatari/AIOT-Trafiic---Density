@@ -28,7 +28,7 @@ print('Connection successful')
 print(wlan.ifconfig())
 
 # Your Google Apps Script URL
-url = 'https://script.google.com/macros/s/AKfycbzePDY5boHRAGWtkMe3Gm1yeOMsU6iRxL9wvGdJ9Fni_aGCfmrzqW_BSw22l2ZUTs-P/exec'
+url = ''
 
 # Function to retrieve data
 def retrieve_data():
@@ -129,4 +129,5 @@ except KeyboardInterrupt:
 # Clean up and disconnect
 wlan.disconnect()
 wlan.active(False)
+
 
